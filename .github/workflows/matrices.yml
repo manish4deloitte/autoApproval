@@ -24,3 +24,6 @@ jobs:
       - name: Deploy to ${{ matrix.environment }} environment
         run: |
           echo "I run post approval for ${{ matrix.environment }}"
+      - name: Run Python Script
+        run: |
+          python -c "print('Hello, World!')"
